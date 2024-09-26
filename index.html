@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey!</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top">
+        <h1 id="title">Project Survey</h1>
+        <p id="description">This survey should only take 5 minutes.  We appreciate your feedback on the XX project and we look forward to improving our services.</p>
+      </div>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your name" class="labelInput"><br><br>
+
+        <label for="email" id="email-label">Email</label><br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email" class="labelInput"><br><br>
+
+        <label for="number" id="number-label">Number</label><br>
+        <input type="number" id="number" name="number" required min="0" max="10" placeholder="Enter a rating 1-10" class="labelInput"><br><br>
+
+        <label>What department do you work in?</label><br>
+        <select id="dropdown" class="labelInput">
+          <option value="accounting">Accounting</option>
+          <option value="marketing">Marketing</option>
+          <option value="customerService">Customer Service</option>
+          <option value="technology">Technology</option>
+        </select><br><br>
+
+        <label class="labelHeadings">Would you say the project was successful?</label><br>
+        <input type="radio" id="radioButtonYes" name="radioButtons" value="yes">
+        <label for="html">Yes</label><br>
+        <input type="radio" id="radioButtonNo" name="radioButtons" value="no">
+        <label for="html">No</label><br><br>
+
+        <label class="labelHeadings">What can we do better for the next project?</label><br>
+        <input type="checkbox" value="communication" id="communication">
+        <label for="communication">Communication</label><br>
+        <input type="checkbox" value="meetingRequirements" name="meetingRequirements">
+        <label for="meetingRequirements">Meeting requirements</label><br>
+        <input type="checkbox" value="friendliness" id="friendliness">
+        <label for="friendliness">Friendliness</label><br>
+        <input type="checkbox" value="budget" id="budget">
+        <label for="other">Other</label><br><br>
+
+        <label for="specifics" class="labelHeadings">Please specify</label><br>
+        <textarea id="specifics" name="specifics" class="commentbox">
+        </textarea><br><br>
+
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div>
+  </body>
+</html>
